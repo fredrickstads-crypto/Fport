@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freca E-Services | WhatsApp Landing Pages & AI Ads</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --neon-blue: #00f0ff;
+            --neon-purple: #c300ff;
+            --neon-pink: #ff0088;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #0a001f, #1a0033);
+            color: #fff;
+            line-height: 1.6;
+        }
+        header {
+            background: rgba(10, 0, 31, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 3px solid var(--neon-blue);
+            padding: 1.5rem 0;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 0 25px var(--neon-blue);
+        }
+        .container { max-width: 1300px; margin: 0 auto; padding: 0 20px; }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.8)), url('hero.jpg') center/cover;
+            z-index: -1;
+        }
+        .neon-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 4.5rem;
+            text-shadow: 0 0 20px var(--neon-blue), 0 0 40px var(--neon-purple);
+            animation: glow 3s infinite alternate;
+        }
+        @keyframes glow { from {text-shadow: 0 0 20px var(--neon-blue);} to {text-shadow: 0 0 50px var(--neon-purple), 0 0 70px var(--neon-pink);} }
+        
+        section { padding: 100px 0; }
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 60px;
+            color: var(--neon-blue);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background: rgba(20, 0, 50, 0.85);
+            border: 2px solid var(--neon-blue);
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.4s ease;
+        }
+        .card:hover {
+            transform: translateY(-15px);
+            border-color: var(--neon-pink);
+            box-shadow: 0 0 40px var(--neon-purple);
+        }
+        .demo-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: transparent;
+            border: 2px solid var(--neon-blue);
+            color: var(--neon-blue);
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s;
+        }
+        .demo-btn:hover {
+            background: var(--neon-blue);
+            color: #000;
+        }
+        .slider {
+            position: relative;
+            height: 320px;
+            overflow: hidden;
+            border-radius: 16px;
+            border: 2px solid var(--neon-blue);
+        }
+        .slides {
+            display: flex;
+            height: 100%;
+            transition: transform 0.8s ease;
+        }
+        .slide {
+            min-width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-shadow: 0 0 15px black;
+        }
+        .pricing-card {
+            text-align: center;
+            background: rgba(30, 0, 60, 0.9);
+        }
+        .price {
+            font-size: 3rem;
+            color: var(--neon-pink);
+            margin: 20px 0;
+        }
+        .cta {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--neon-purple), var(--neon-pink));
+            color: white;
+            padding: 18px 50px;
+            font-size: 1.6rem;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 30px 0;
+            box-shadow: 0 0 40px var(--neon-pink);
+            transition: 0.4s;
+        }
+        .cta:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 60px var(--neon-blue);
+        }
+        footer {
+            text-align: center;
+            padding: 60px 20px;
+            background: #0a001f;
+        }
+        video {
+            width: 100%;
+            height: 180px;
+            border-radius: 12px;
+            background: #111;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <h1 style="text-align:center; color:var(--neon-blue); font-family:'Orbitron',sans-serif;">FRECA E-SERVICES</h1>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1 class="neon-title">Love for Uganda Digital Future</h1>
+        <p style="font-size:1.8rem; margin:25px 0;">Premium WhatsApp Landing Pages • AI Video Ads • Creative Design</p>
+        <a href="https://wa.me/256726978988" class="cta" target="_blank">📱 WhatsApp Me: 0726978988</a>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>WhatsApp Landing Page Demos</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Salon</h3>
+                <a href="https://fredrickstads-crypto.github.io/PremiumSaloon/" target="_blank" class="demo-btn">View Live Demo →</a>
+            </div>
+            <div class="card">
+                <h3>Restaurant</h3>
+                <a href="https://fredrickstads-crypto.github.io/Premium/#meals" target="_blank" class="demo-btn">View Live Demo →</a>
+            </div>
+            <div class="card">
+                <h3>Cosmetics</h3>
+                <a href="https://fredrickstads-crypto.github.io/Premium-beauty/" target="_blank" class="demo-btn">View Live Demo →</a>
+            </div>
+            <div class="card">
+                <h3>Shoes Store</h3>
+                <a href="https://fredrickstads-crypto.github.io/Standshoe/" target="_blank" class="demo-btn">View Live Demo →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="background:rgba(10,0,40,0.6);">
+    <div class="container">
+        <h2>WhatsApp Landing Pages Pricing (UGX)</h2>
+        <div class="grid">
+            <div class="card pricing-card">
+                <h3>Basic</h3>
+                <div class="price">50,000+</div>
+                <p>Simple, clean & mobile optimized</p>
+            </div>
+            <div class="card pricing-card">
+                <h3>Standard</h3>
+                <div class="price">100,000+</div>
+                <p>Interactive + catalog ready</p>
+            </div>
+            <div class="card pricing-card">
+                <h3>Premium</h3>
+                <div class="price">150,000+</div>
+                <p>Full e-commerce + advanced features</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>Professional AI Video Adverts</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🍽️ Restaurant</h3>
+                <video controls loop muted>
+                    <source src="rest.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Appetizing meals &amp; restaurant atmosphere promo</p>
+            </div>
+            <div class="card">
+                <h3>💄 Cosmetics</h3>
+                <video controls loop muted>
+                    <source src="cos.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Glow &amp; beauty product transformation ad</p>
+            </div>
+            <div class="card">
+                <h3>👕 Clothes / Fashion</h3>
+                <video controls loop muted>
+                    <source src="bot.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Stylish fashion &amp; lifestyle clothing promo</p>
+            </div>
+        </div>
+        <h2>Samples for some real brands</h2>
+        <div class="card">
+                <h3> Restuarant</h3>
+                <video controls loop muted>
+                    <source src="k2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </div>
+        <div class="card">
+                <h3>ICE CREAM</h3>
+                <video controls loop muted>
+                    <source src="k1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </div>
+        <div class="card">
+                <h3>Motor Vehicles</h3>
+                <video controls loop muted>
+                    <source src="c.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                
+            </div>
+        <div class="card">
+                <h3>Electronic Gadgets</h3>
+                <video controls loop muted>
+                    <source src="h.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+               
+            </div>
+        <h2 style="margin-top:80px;">Voice-Over Advertising</h2>
+        <div class="card" style="max-width:700px; margin:40px auto; text-align:center;">
+            <p style="font-size:1.4rem;">Upload your filmed video → Get professional voice-over narration</p>
+            <video controls loop muted style="height:220px; margin:20px auto; display:block;">
+                <source src="d.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="price">1 minute → 10,000 UGX</div>
+        </div>
+    </div>
+</section>
+
+<section style="background:rgba(20,0,50,0.7);">
+    <div class="container">
+        <h2>Creative Gallery</h2>
+        
+        <h3 style="text-align:center; margin:40px 0 20px; color:var(--neon-pink);">Flyers</h3>
+        <div class="slider" id="flyerSlider">
+            <div class="slides" id="flyerSlides">
+                <div class="slide" style="background-image:url('f1.jpg')">Flyer Design 1</div>
+                <div class="slide" style="background-image:url('f2.jpg')">Flyer Design 2</div>
+                <div class="slide" style="background-image:url('f3.jpg')">Flyer Design 3</div>
+            </div>
+        </div>
+
+        <h3 style="text-align:center; margin:60px 0 20px; color:var(--neon-purple);">Posters</h3>
+        <div class="slider" id="posterSlider">
+            <div class="slides" id="posterSlides">
+                <div class="slide" style="background-image:url('p1.jpg')">Poster 1</div>
+                <div class="slide" style="background-image:url('p2.jpg')">Poster 2</div>
+                <div class="slide" style="background-image:url('p3.jpg')">Poster 3</div>
+            </div>
+        </div>
+
+        <h3 style="text-align:center; margin:60px 0 20px; color:var(--neon-blue);">Logos</h3>
+        <div class="slider" id="logoSlider">
+            <div class="slides" id="logoSlides">
+                <div class="slide" style="background-image:url('l1.jpg')">Logo Concept 1</div>
+                <div class="slide" style="background-image:url('l2.jpg')">Logo Concept 2</div>
+                <div class="slide" style="background-image:url('l3.jpg')">Logo Concept 3</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section style="text-align:center;">
+    <div class="container">
+        <a href="https://wa.me/256726978988" class="cta" target="_blank">🚀 Get Your Custom Solution Now - WhatsApp 0726978988</a>
+        <p style="margin-top:30px; font-size:1.3rem;">Fast delivery • High quality • Uganda focused</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Freca E-Services • Built With Love for the Future of Business in Uganda</p>
+</footer>
+
+<script>
+    function createSlider(slidesId, interval=3500) {
+        const container = document.getElementById(slidesId);
+        let index = 0;
+        setInterval(() => {
+            index = (index + 1) % 3;
+            container.style.transform = `translateX(-${index * 100}%)`;
+        }, interval);
+    }
+    window.onload = () => {
+        createSlider('flyerSlides');
+        createSlider('posterSlides');
+        createSlider('logoSlides');
+    };
+</script>
+</body>
+</html>
